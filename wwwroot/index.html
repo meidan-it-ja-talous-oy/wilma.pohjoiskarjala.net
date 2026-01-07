@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Pohjois-Karjalan Wilma-portaali</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./assets/style.css" rel="stylesheet">
+        <meta name="Robots" content="NOINDEX ">
+        <script type="text/javascript">
+            var gearPage = document.getElementById('GearPage');
+            if(null != gearPage)
+            {
+                gearPage.parentNode.removeChild(gearPage);
+                document.title = "Virhe";
+            }
+        </script>
+        <style>
+            body {
+                font-family: 'Ubuntu', sans-serif;
+                padding: 0;
+                margin: 0;
+                background-image: url(wilma_tausta.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .header, .footer {
+                background-color: rgba(0,0,0,0.4);
+                text-align: center;
+                margin-bottom: 30px;
+                color: #fff;
+            }
+            .header {
+                font-size: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            .kunnat_wrap {
+                display: flex;
+                justify-content: center;
+            }
+            .kunnat {
+                display: flex;
+                max-width: 1200px;
+                justify-content: center;
+                flex-wrap: wrap;
+                width: 70%;
+            }
+            .kunta {
+                display: block;
+                width: 130px;
+                float: left;
+                background-color: rgba(255,255,255,0.9);
+                margin: 15px;
+                border-radius: 8px;
+            }
+            .kunta:hover {
+                background-color: rgba(255,255,255,0.5);
+            }
+            .kunta:hover .kunta_nim {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+            }
+            .kuva {
+                text-align: center;
+                height: 75px;
+                margin-top: 20px;
+            }
+            
+            .kuva img {
+                width: 55px;
+            }
+            .kunta_nim {
+                text-align: center;
+                color: #383838;
+                height: 40px;
+                padding-top: 11px;
+                background-color: rgba(0, 0, 0, 0.1);
+                border-radius: 0px 0px 8px 8px;
+                border-top: solid 1px #fff;
+            } 
+            .kunta a {
+                text-decoration: none;
+            }
+            .footer {
+                position: relative;
+                width: 100%;
+                float: left;
+                padding-top: 30px;
+                margin-top: 30px;
+                padding-bottom: 60px;
+                margin-bottom: 0;
+            }
+            @media only screen and (max-width: 1000px) {
+                .kunnat {
+                    width: 90%;
+                }
+                .header {
+                    font-size: 20px;
+                    padding: 15px;
+                }
+                .footer {
+                    padding-top: 15px;
+                    margin-top: 30px;
+                    padding-bottom: 30px;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+                .kunnat {
+                    width: 98%;
+                }
+            }
+
+        </style>
+    </head> 
+    <body>
+    <div class="header">
+        Pohjois-Karjalan Wilma -portaali
+    </div>
+    <div class="kunnat_wrap">
+    <div class="kunnat">
+        <!--
+        <div class="kunta heinavesi">
+            <a href="https://heinavesi.inschool.fi/">
+                <div class="kuva">
+                    <img src="Heinavesi.png">
+                </div>
+                <div class="kunta_nim">
+                        Heinävesi
+                </div>
+            </a>
+        </div>
+        -->
+        <div class="kunta ilomantsi">
+            <a href="https://ilomantsi.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Ilomantsi.png">
+                </div>
+                <div class="kunta_nim">
+                        Ilomantsi
+                </div>
+            </a>
+        </div>
+        <div class="kunta joensuu">
+            <a href="https://joensuu.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Joensuu.png">
+                </div>
+                <div class="kunta_nim">
+                        Joensuu
+                </div>
+            </a>
+        </div>
+        <div class="kunta juuka">
+            <a href="https://juuka.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/juuka.png">
+                </div>
+                <div class="kunta_nim">
+                        Juuka
+                </div>
+            </a>
+        </div>
+        <div class="kunta kitee">
+            <a href="https://kitee.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Kitee.png">
+                </div>
+                <div class="kunta_nim">
+                        Kitee
+                </div>
+            </a>
+        </div>
+        <div class="kunta kontiolahti">
+            <a href="https://kontiolahti.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Kontiolahti.png">
+                </div>
+                <div class="kunta_nim">
+                        Kontiolahti
+                </div>
+            </a>
+        </div>
+        <div class="kunta lieksa">
+            <a href="https://lieksa.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Lieksa.png">
+                </div>
+                <div class="kunta_nim">
+                        Lieksa
+                </div>
+            </a>
+        </div>
+        <div class="kunta liperi">
+            <a href="https://liperi.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Liperi.png">
+                </div>
+                <div class="kunta_nim">
+                        Liperi
+                </div>
+            </a>
+        </div>
+        <div class="kunta nurmes">
+            <a href="https://nurmes.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Nurmes.png">
+                </div>
+                <div class="kunta_nim">
+                        Nurmes
+                </div>
+            </a>
+        </div>
+        <div class="kunta outokumpu">
+            <a href="https://outokumpu.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Outokumpu.png">
+                </div>
+                <div class="kunta_nim">
+                        Outokumpu
+                </div>
+            </a>
+        </div>
+        <div class="kunta polvijarvi">
+            <a href="https://polvijarvi.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Polvijarvi.png">
+                </div>
+                <div class="kunta_nim">
+                        Polvijärvi
+                </div>
+            </a>
+        </div>
+        <div class="kunta raakkyla">
+            <a href="https://raakkyla.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Raakkyla.png">
+                </div>
+                <div class="kunta_nim">
+                        Rääkkylä
+                </div>
+            </a>
+        </div>
+        <div class="kunta tohmajarvi">
+            <a href="https://tohmajarvi.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Tohmajarvi.png">
+                </div>
+                <div class="kunta_nim">
+                        Tohmajärvi
+                </div>
+            </a>
+        </div>
+        <!--
+        <div class="kunta valtimo">
+            <a href="https://wilma.pohjoiskarjala.net:8229/">
+                <div class="kuva">
+                    <img src= "Valtimo.png">
+                </div>
+                <div class="kunta_nim">
+                        Valtimo
+                </div>
+            </a>
+        </div>
+        -->
+        <div class="kunta konservatorio">
+            <a href="https://joensuunkonservatorio.inschool.fi/">
+                <div class="kuva">
+                    <img src="./assets/Joensuu.png">
+                </div>
+                <div class="kunta_nim">
+                        Joensuun konservatorio
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        Pohjois-Karjalan | wilma.pohjoiskarjala.net
+    </div>                 
+</body></html>
